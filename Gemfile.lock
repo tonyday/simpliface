@@ -2,14 +2,11 @@ PATH
   remote: .
   specs:
     simpliface (0.1.0)
-      activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (5.2.3)
-      activesupport (= 5.2.3)
     activesupport (5.2.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
