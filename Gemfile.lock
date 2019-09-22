@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    simpliface (0.1.0)
+    simpliface (0.1.1)
       activesupport (>= 4.0.0)
 
 GEM
