@@ -57,7 +57,7 @@ module Simpliface
     end
 
     def check_no_extra_keyword_arguments(kwargs)
-      extras = kwargs.keys.difference(self.class.all_argument_names)
+      extras = kwargs.keys - self.class.all_argument_names
       return if extras.empty?
 
       raise ArgumentError,
@@ -65,7 +65,7 @@ module Simpliface
     end
 
     def check_all_mandatory_keyword_arguments(kwargs)
-      missing = self.class.mandatory_arguments.difference(kwargs.keys)
+      missing = self.class.mandatory_arguments - kwargs.keys
       return if missing.empty?
 
       raise ArgumentError,
