@@ -11,8 +11,8 @@ module Simpliface
   extend ActiveSupport::Concern
 
   class_methods do
-    def call(*args)
-      new(*args).send(:call)
+    def call(**args)
+      new(**args).send(:call)
     end
 
     attr_writer :mandatory_arguments, :optional_arguments

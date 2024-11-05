@@ -11,7 +11,7 @@ RSpec.describe Simpliface do
     it 'raises error when called with positional argument' do
       expect do
         test_service.call('some arg')
-      end.to raise_error(ArgumentError, /Positional arguments not permitted/)
+      end.to raise_error(ArgumentError, /wrong number of arguments \(given 1, expected 0\)/)
     end
 
     it 'raises error when called with unexpected keyword argument' do
